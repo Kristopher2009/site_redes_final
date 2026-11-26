@@ -21,15 +21,15 @@
     <main class="conteudo">
         <section class="abertura">
             <p class="rotulo">Redes e protocolos industriais</p>
-            <h1>Comunicação na <strong>automação.</strong></h1>
-            <p>Redes industriais conectam sensores, instrumentos, controladores e sistemas de supervisão. Elas ajudam a acompanhar medições, enviar comandos e coordenar máquinas e processos.</p>
-            <p>Além de transmitir dados, precisam ser planejadas para as condições do local: ruído elétrico, temperatura, vibração, distância, tempo de resposta e disponibilidade exigida.</p>
+            <h1>Na fábrica, a rede também faz parte <strong>do controle.</strong></h1>
+            <p>Um sensor mede, o controlador decide o que fazer e a tela mostra o resultado. A rede leva esses dados de um equipamento ao outro.</p>
+            <p>No chão de fábrica, o projeto também precisa considerar ruído elétrico, calor, vibração, distância e o tempo de resposta necessário.</p>
         </section>
 
         <section class="secao">
             <p class="rotulo">Tecnologias por grupo</p>
             <h2>Onde cada rede é usada?</h2>
-            <p class="apoio-tecnico">As explicações simples continuam visíveis. Abra “Detalhes técnicos” para ver cabeamento, sinais, comunicação e desempenho conforme o PDF. Valores são típicos e devem ser confirmados nas especificações dos equipamentos.</p>
+            <p class="apoio-tecnico">Cada item começa com um resumo. Abra “Detalhes técnicos” para ver meios físicos, comunicação e desempenho. Os valores são referências; confira os limites do equipamento antes de projetar a instalação.</p>
 
             <div class="grupo">
                 <h3>Ethernet industrial</h3>
@@ -81,7 +81,7 @@
                         <details class="detalhes-tecnicos">
                             <summary>Detalhes técnicos</summary>
                             <dl>
-                                <div><dt>Cabeamento</dt><dd>Usa 100BASE-TX em Cat5e ou fibra 100BASE-FX; módulos podem comunicar pelo E-bus (LVDS). Conectores incluem RJ45, M8 e M12 D-coded. Topologias comuns: linha, árvore, estrela e anel redundante; o documento cita até 65.535 nós.</dd></div>
+                                <div><dt>Cabeamento</dt><dd>Usa 100BASE-TX em Cat5e ou fibra 100BASE-FX; módulos podem comunicar pelo E-bus (LVDS). Conectores incluem RJ45, M8 e M12 D-coded. Topologias comuns: linha, árvore, estrela e anel redundante. A rede pode ter até 65.535 nós.</dd></div>
                                 <div><dt>Sinais elétricos</dt><dd>Ethernet 100BASE-TX full-duplex. Na versão EtherCAT P, o mesmo cabo de 4 fios pode levar dados e 24 Vcc para o sistema e periféricos. Cabo blindado e isolamento nas portas ajudam a proteger a rede industrial.</dd></div>
                                 <div><dt>Comunicação</dt><dd>O mestre envia um quadro que percorre os escravos; cada dispositivo lê e insere dados “em voo” (processing on the fly). Escravos usam um controlador ESC; o mestre pode usar uma porta Ethernet comum. Distributed Clocks sincroniza os nós. O quadro usa EtherType 0x88A4, cabeçalho, datagramas (comando, índice, endereço, comprimento, dados e Working Counter) e FCS CRC-32.</dd></div>
                                 <div><dt>Desempenho</dt><dd>Taxa de 100 Mb/s (1 Gb/s no EtherCAT G); cerca de 100 m entre nós em cobre, até 2 km em fibra multimodo ou 40 km em monomodo. É hard real-time, com ciclos a partir de aproximadamente 31,25 µs e jitter inferior a 1 µs. Usado em Campo e Controle para movimento, robótica, CNC e I/O rápido.</dd></div>
@@ -102,7 +102,7 @@
                                 <div><dt>Cabeamento</dt><dd>Usa Ethernet 100BASE-TX em Cat5e ou fibra, com conectores RJ45, SC ou LC. Pode formar estrela ou anel e atuar como backbone, ligando segmentos H1 por meio de linking devices.</dd></div>
                                 <div><dt>Sinais elétricos</dt><dd>Em cobre, segue a sinalização 100BASE-TX; a alimentação é separada. Cabos blindados e fibra entre áreas distantes ajudam a proteger a instalação contra interferências.</dd></div>
                                 <div><dt>Comunicação</dt><dd>É Ethernet comutada full-duplex. Sobre TCP/UDP/IP rodam as camadas FMS/FDA do Fieldbus. Pode haver redundância de rede e de controladores. O quadro Ethernet padrão (FCS CRC-32) transporta a mensagem Fieldbus.</dd></div>
-                                <div><dt>Desempenho</dt><dd>Opera normalmente a 100 Mb/s, com versões de 1 Gb/s; cobre: até 100 m por segmento, e fibra: quilômetros. Não é estritamente determinístico, mas atende à supervisão e à integração de controladores e linking devices. O documento o situa em Controle e Supervisão.</dd></div>
+                                <div><dt>Desempenho</dt><dd>Opera normalmente a 100 Mb/s, com versões de 1 Gb/s; cobre: até 100 m por segmento, e fibra: quilômetros. Não é estritamente determinístico, mas atende à supervisão e à integração de controladores e linking devices.</dd></div>
                             </dl>
                         </details>
                     </article>
@@ -123,10 +123,10 @@
                         <details class="detalhes-tecnicos">
                             <summary>Detalhes técnicos</summary>
                             <dl>
-                                <div><dt>Cabeamento</dt><dd>Normalmente usa par trançado blindado RS-485 (2 fios half-duplex ou 4 fios full-duplex); também existe RS-232 ponto a ponto. Conexões podem ser por bornes, D-Sub de 9 pinos ou RJ45. A topologia RS-485 é um barramento linear com terminação de 120 Ω nas duas extremidades e polarização; o documento indica até 32 cargas unitárias por segmento e 247 endereços.</dd></div>
+                                <div><dt>Cabeamento</dt><dd>Normalmente usa par trançado blindado RS-485 (2 fios half-duplex ou 4 fios full-duplex); também existe RS-232 ponto a ponto. Conexões podem ser por bornes, D-Sub de 9 pinos ou RJ45. A topologia RS-485 é um barramento linear com terminação de 120 Ω nas duas extremidades e polarização. São aceitas até 32 cargas unitárias por segmento e 247 endereços.</dd></div>
                                 <div><dt>Sinais elétricos</dt><dd>RS-485 transmite diferencialmente pelas linhas A/B; o limiar de recepção citado é ±200 mV e a faixa de modo comum é −7 a +12 V. A transmissão serial é assíncrona, com start, 8 bits de dados, paridade par ou nenhuma e 1 ou 2 bits de parada (11 bits no formato comum). A alimentação é separada; blindagem aterrada em um ponto e isolamento galvânico opcional ajudam a proteger a instalação.</dd></div>
                                 <div><dt>Comunicação</dt><dd>O mestre inicia as mensagens e os escravos respondem quando endereçados; endereço 0 é broadcast sem resposta. Um silêncio de 3,5 tempos de caractere delimita quadros. O quadro tem endereço, função, dados (até 252 bytes) e CRC-16, com tamanho total de até 256 bytes.</dd></div>
-                                <div><dt>Desempenho</dt><dd>Taxas de 1200 a 115200 b/s; 9600 e 19200 b/s são comuns. O documento cita cerca de 1200 m a 9600 b/s, com distância menor em taxas maiores. O polling é previsível, mas o ciclo cresce com o número de escravos e não oferece tempo real estrito. Usado entre Campo e Controle.</dd></div>
+                                <div><dt>Desempenho</dt><dd>Taxas de 1200 a 115200 b/s; 9600 e 19200 b/s são comuns. O alcance pode chegar a cerca de 1200 m a 9600 b/s, e diminui em taxas maiores. O polling é previsível, mas o ciclo cresce com o número de escravos e não oferece tempo real estrito. Usado entre Campo e Controle.</dd></div>
                             </dl>
                         </details>
                     </article>
@@ -184,9 +184,9 @@
                             <summary>Detalhes técnicos</summary>
                             <dl>
                                 <div><dt>Cabeamento</dt><dd>Usa par trançado blindado Tipo A, conforme IEC 61158-2, normalmente azul. Ligações são feitas em bornes, caixas de junção/acopladores ou conectores M12. Topologias incluem tronco com derivações, árvore e estrela; o tronco recebe terminadores de 100 Ω + 1 µF nas duas extremidades.</dd></div>
-                                <div><dt>Sinais elétricos</dt><dd>MBP (Manchester Bus Powered) usa Manchester II a 31,25 kb/s, com modulação de corrente de cerca de ±9 mA (0,75–1 Vpp) sobre a alimentação. O mesmo par fornece 9–32 Vcc; instrumentos costumam consumir 10–15 mA. O documento cita FISCO em torno de 1000 m em IIC e 1900 m em IIB; blindagem e aterramento seguem as regras da instalação.</dd></div>
+                                <div><dt>Sinais elétricos</dt><dd>MBP (Manchester Bus Powered) usa Manchester II a 31,25 kb/s, com modulação de corrente de cerca de ±9 mA (0,75–1 Vpp) sobre a alimentação. O mesmo par fornece 9–32 Vcc; instrumentos costumam consumir 10–15 mA. Em instalações FISCO, o alcance pode ficar em torno de 1000 m em IIC e 1900 m em IIB; blindagem e aterramento seguem as regras da instalação.</dd></div>
                                 <div><dt>Comunicação</dt><dd>Opera como mestre-escravo com serviços cíclicos e acíclicos PROFIBUS DP-V1. Um acoplador de segmento pode converter RS-485 para MBP; também pode ser usado um DP/PA link. Os quadros PROFIBUS DP (SD1–SD4) são encapsulados no formato MBP, com preâmbulo e delimitadores.</dd></div>
-                                <div><dt>Desempenho</dt><dd>A taxa é 31,25 kb/s. O documento cita até 1900 m por segmento em área segura e cerca de 1000 m em área Ex (o limite depende da classificação e do projeto). É determinístico, com ciclos típicos de 100–500 ms, adequado a processos contínuos no nível de Campo.</dd></div>
+                                <div><dt>Desempenho</dt><dd>A taxa é 31,25 kb/s. O alcance pode chegar a 1900 m por segmento em área segura e cerca de 1000 m em área Ex; o limite depende da classificação e do projeto. É determinístico, com ciclos típicos de 100–500 ms, adequado a processos contínuos no nível de Campo.</dd></div>
                             </dl>
                         </details>
                     </article>
@@ -204,7 +204,7 @@
                                 <div><dt>Cabeamento</dt><dd>Usa o par trançado do laço 4–20 mA, com cabo blindado e resistência de laço indicada entre 230 e 600 Ω. A ligação é ponto a ponto ou multidrop; comunicadores portáteis conectam-se em paralelo aos bornes do instrumento. Multidrop comporta até 15 dispositivos no HART 5 e até 63 nas versões 6/7.</dd></div>
                                 <div><dt>Sinais elétricos</dt><dd>Bell 202 FSK sobrepõe tons de 1200 Hz (“1”) e 2200 Hz (“0”), com amplitude de cerca de ±0,5 mA; a média nula mantém a medição analógica. O transmissor costuma ser alimentado pelo próprio laço de dois fios. Barreiras zener ou isoladores de segurança intrínseca podem ser necessários em área classificada.</dd></div>
                                 <div><dt>Comunicação</dt><dd>O modo pergunta/resposta admite mestre primário (sistema de controle), secundário (comunicador) e opção burst. O quadro pode começar com 5–20 bytes de preâmbulo 0xFF e inclui delimitador, endereço curto (1 byte) ou longo (5 bytes), comando, contagem, status na resposta, dados e checksum XOR. Cada caractere tem start, 8 dados, paridade ímpar e stop (11 bits).</dd></div>
-                                <div><dt>Desempenho</dt><dd>A taxa digital é 1200 b/s, aproximadamente 2–3 transações por segundo. O documento indica até cerca de 3000 m em cabo simples e 1500 m em multidrop, conforme a capacitância. O digital serve a configuração e diagnóstico; o sinal analógico continua responsável pelo controle em tempo real. Atua no nível de Campo.</dd></div>
+                                <div><dt>Desempenho</dt><dd>A taxa digital é 1200 b/s, aproximadamente 2–3 transações por segundo. O alcance pode chegar a cerca de 3000 m em cabo simples e 1500 m em multidrop, conforme a capacitância. O digital serve a configuração e diagnóstico; o sinal analógico continua responsável pelo controle em tempo real. Atua no nível de Campo.</dd></div>
                             </dl>
                         </details>
                     </article>
@@ -219,7 +219,7 @@
                         <details class="detalhes-tecnicos">
                             <summary>Detalhes técnicos</summary>
                             <dl>
-                                <div><dt>Cabeamento</dt><dd>Usa par trançado blindado Tipo A, conforme IEC 61158-2. Conexões incluem bornes em caixas de junção/barreiras de campo e M12 nos instrumentos. Permite barramento com derivações, árvore (chicken foot), ponto a ponto e daisy chain. O documento cita até 32 dispositivos por segmento em área segura, até 240 na rede com no máximo 4 repetidores e 4–8 por segmento em área Ex. Terminadores ficam nas pontas do tronco.</dd></div>
+                                <div><dt>Cabeamento</dt><dd>Usa par trançado blindado Tipo A, conforme IEC 61158-2. Conexões incluem bornes em caixas de junção/barreiras de campo e M12 nos instrumentos. Permite barramento com derivações, árvore (chicken foot), ponto a ponto e daisy chain. Pode ter até 32 dispositivos por segmento em área segura, até 240 na rede com no máximo 4 repetidores e 4–8 por segmento em área Ex. Terminadores ficam nas pontas do tronco.</dd></div>
                                 <div><dt>Sinais elétricos</dt><dd>Manchester II a 31,25 kb/s, com modulação de corrente de aproximadamente 15–20 mA pico a pico. O mesmo par fornece 9–32 Vcc, com consumo típico de 10–20 mA por instrumento. FISCO/FNICO podem apoiar segurança intrínseca; blindagem aterrada em um ponto evita laços de terra.</dd></div>
                                 <div><dt>Comunicação</dt><dd>Um Link Active Scheduler (LAS) controla o barramento. O tráfego cíclico agendado usa Compel Data no modelo publicador/assinante; o não agendado usa Pass Token para alarmes e configuração. Blocos AI, PID e AO permitem executar controle nos instrumentos (Control in the Field). O quadro DLPDU contém controle, endereços, dados e FCS CRC-16.</dd></div>
                                 <div><dt>Desempenho</dt><dd>A taxa é 31,25 kb/s. O alcance citado é até 1900 m por segmento em área segura (cerca de 9,5 km com 4 repetidores) e cerca de 1000 m em área Ex. É determinístico, com macrociclos de algumas centenas de milissegundos, para controle de processos no nível de Campo.</dd></div>
@@ -238,7 +238,7 @@
                             <summary>Detalhes técnicos</summary>
                             <dl>
                                 <div><dt>Cabeamento</dt><dd>Usa cabo chato amarelo de dois condutores (2 × 1,5 mm²), sem blindagem nem torção, para dados e energia; um cabo chato preto opcional leva 24 Vcc auxiliar. Conexões por perfuração do isolamento dispensam descascar o cabo; também há M12, M8 e bornes. Topologia livre (linha, estrela, árvore ou anel aberto), sem terminadores.</dd></div>
-                                <div><dt>Sinais elétricos</dt><dd>APM usa pulsos alternados de corrente (forma aproximada de seno ao quadrado), com codificação Manchester sobre alimentação de aproximadamente 30 Vcc (26,5–31,6 V). A mesma linha transporta dados e energia; um indutor na fonte desacopla o sinal. A imunidade vem da modulação/simetria, não de blindagem. Módulos podem ter IP67; AS-i Safety at Work é indicado no documento até SIL 3/PL e.</dd></div>
+                                <div><dt>Sinais elétricos</dt><dd>APM usa pulsos alternados de corrente (forma aproximada de seno ao quadrado), com codificação Manchester sobre alimentação de aproximadamente 30 Vcc (26,5–31,6 V). A mesma linha transporta dados e energia; um indutor na fonte desacopla o sinal. A imunidade vem da modulação/simetria, não de blindagem. Módulos podem ter IP67; AS-i Safety at Work pode atender até SIL 3/PL e.</dd></div>
                                 <div><dt>Comunicação</dt><dd>O mestre faz polling cíclico, consultando um escravo por vez. A requisição tem 14 bits e a resposta 7 bits; cada escravo troca 4 bits de entrada e 4 de saída.</dd></div>
                                 <div><dt>Desempenho</dt><dd>Taxa de 167 kb/s. O segmento alcança 100 m, ou até 300 m com repetidores/extensores. O ciclo citado é 5 ms para até 31 escravos e 10 ms para até 62 com endereçamento A/B. Fica no nível de sensores e atuadores e pode conectar-se a um mestre/gateway superior.</dd></div>
                             </dl>
@@ -288,7 +288,7 @@
                     </article>
                 </div>
             </div>
-            <p class="credito-fotos">As fotos mostram equipamentos relacionados aos temas; os protocolos são regras de comunicação e não têm uma aparência visual própria. Fotografias ilustrativas: <a href="https://www.pexels.com/license/">Pexels</a>.</p>
+            <p class="credito-fotos">Fotos ilustrativas: <a href="https://www.pexels.com/license/">Pexels</a>.</p>
         </section>
 
         <section class="secao">

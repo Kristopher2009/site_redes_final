@@ -21,14 +21,14 @@
     <main class="conteudo">
         <section class="abertura">
             <p class="rotulo">Redes corporativas e locais</p>
-            <h1>Conectando pessoas e <strong>dispositivos.</strong></h1>
-            <p>Uma rede corporativa liga computadores, servidores, impressoras e celulares para que pessoas compartilhem arquivos, acessem aplicações e se comuniquem. O projeto pode combinar conexões com fio e sem fio.</p>
+            <h1>No escritório, tudo passa <strong>pela rede.</strong></h1>
+            <p>Notebooks, impressoras e celulares usam a rede para acessar arquivos, sistemas e a internet. Alguns se conectam por cabo; outros, pelo Wi-Fi.</p>
         </section>
 
         <section class="secao">
-            <p class="rotulo">Três tecnologias</p>
-            <h2>Meios de conexão</h2>
-            <p class="apoio-tecnico">As explicações simples ficam visíveis. Abra “Detalhes técnicos” para consultar os dados do documento; valores variam conforme o padrão, o equipamento e a instalação.</p>
+            <p class="rotulo">Na prática</p>
+            <h2>Cabo, Wi-Fi ou fibra?</h2>
+            <p class="apoio-tecnico">Veja os usos mais comuns abaixo. Abra “Detalhes técnicos” para consultar padrões e limites. Alcance e velocidade variam conforme os equipamentos e a instalação.</p>
             <div class="lista">
                 <article class="item">
                     <div class="cabecalho-item">
@@ -44,7 +44,7 @@
                             <div><dt>Cabeamento</dt><dd>Par trançado: Cat5e (até 1 Gb/s em 100 m), Cat6 (10 Gb/s até 55 m), Cat6A (10 Gb/s em 100 m) e Cat8 (25/40 Gb/s até 30 m). Também pode usar fibra; coaxial (10BASE5/10BASE2) aparece em padrões legados. Conectores: RJ45, SFP/SFP+, M12 D-coded (100 Mb/s), M12 X-coded (10 Gb/s) e RJ45 industrial push-pull. Topologias atuais incluem estrela e árvore; anéis podem usar RSTP ou MRP; barramento é legado coaxial.</dd></div>
                             <div><dt>Sinais elétricos</dt><dd>10BASE-T usa Manchester; 100BASE-TX, 4B5B e MLT-3; 1000BASE-T, PAM-5; e 10GBASE-T, PAM-16. O sinal é diferencial e balanceado, com transformadores de isolamento citados em cerca de 1500 Vrms. PoE: 802.3af (15,4 W), 802.3at (30 W) e 802.3bt (aproximadamente 60–90 W). Torção, blindagem F/UTP ou S/FTP e aterramento correto ajudam contra EMI; fibra elimina esse tipo de interferência.</dd></div>
                             <div><dt>Comunicação</dt><dd>CSMA/CD com detecção e backoff exponencial é associado a meios compartilhados half-duplex; em switches full-duplex modernos não há colisões. O quadro inclui preâmbulo (7 bytes), SFD, MAC de destino/origem, EtherType/Length, dados (46–1500 bytes) e FCS CRC-32. VLAN 802.1Q acrescenta 4 bytes.</dd></div>
-                            <div><dt>Desempenho</dt><dd>Há taxas de 10 Mb/s até 400 Gb/s. O limite usual de um segmento de cobre é 100 m (90 m de cabeamento permanente e até 10 m de cordões). Ethernet básica não garante tempo determinístico; QoS e TSN (IEEE 802.1) podem melhorar o tratamento de tráfego sensível ao tempo. No documento, aparece nos níveis de Controle, Supervisão e Integração.</dd></div>
+                            <div><dt>Desempenho</dt><dd>Há taxas de 10 Mb/s até 400 Gb/s. O limite usual de um segmento de cobre é 100 m (90 m de cabeamento permanente e até 10 m de cordões). Ethernet básica não garante tempo determinístico; QoS e TSN (IEEE 802.1) podem melhorar o tratamento de tráfego sensível ao tempo.</dd></div>
                         </dl>
                     </details>
                 </article>
@@ -80,7 +80,7 @@
                             <div><dt>Cabeamento</dt><dd>Multimodo inclui OM1 (62,5/125 µm) e OM2–OM5 (50/125 µm, normalmente 850 nm); monomodo OS1/OS2 usa núcleo de cerca de 9 µm, normalmente 1310 ou 1550 nm. Conectores: LC, SC, ST, FC, MPO/MTP e, em versões industriais, SC-RJ/M12 óptico. Pode formar enlaces ponto a ponto, estrela, anel ou árvore PON.</dd></div>
                             <div><dt>Sinais elétricos</dt><dd>O transmissor converte dados em pulsos de luz: LED/VCSEL é comum em multimodo e laser DFB em monomodo. Podem ser usados NRZ ou PAM-4 e codificações 8b/10b ou 64b/66b. A fibra não transporta energia elétrica, é imune a EMI/RFI e oferece isolamento galvânico; não gera faísca, observados os limites de potência óptica aplicáveis.</dd></div>
                             <div><dt>Comunicação</dt><dd>A fibra é o meio físico; o protocolo define o acesso e o quadro. Ethernet óptica costuma ser full-duplex ponto a ponto, por duas fibras ou WDM em uma. Em redes PON, usa-se TDM no sentido descendente e TDMA no ascendente; o quadro é o do protocolo transportado, como Ethernet 802.3.</dd></div>
-                            <div><dt>Desempenho</dt><dd>O documento cita taxas de 100 Mb/s a 400 Gb/s ou superiores. Exemplos: 1000BASE-SX até 550 m em multimodo; 10GBASE-SR até 300 m (OM3) ou 400 m (OM4); 1000BASE-LX e 10GBASE-LR até 10 km; ER até 40 km e ZR até 80 km em monomodo. A propagação é cerca de 5 µs/km; o determinismo depende do protocolo e dos equipamentos.</dd></div>
+                            <div><dt>Desempenho</dt><dd>As taxas variam de 100 Mb/s a 400 Gb/s ou mais. Exemplos: 1000BASE-SX até 550 m em multimodo; 10GBASE-SR até 300 m (OM3) ou 400 m (OM4); 1000BASE-LX e 10GBASE-LR até 10 km; ER até 40 km e ZR até 80 km em monomodo. A propagação é cerca de 5 µs/km; o determinismo depende do protocolo e dos equipamentos.</dd></div>
                         </dl>
                     </details>
                 </article>
@@ -90,7 +90,7 @@
 
         <section class="secao">
             <p class="rotulo">Como as peças se conectam</p>
-            <h2>Um exemplo de rede de escritório</h2>
+            <h2>Um caminho comum até a internet</h2>
             <div class="fluxo">
                 <p><strong>Computador ou impressora</strong><span>↔</span><strong>Switch Ethernet</strong><span>↔</span><strong>Roteador</strong><span>↔</span><strong>Internet e outros serviços</strong></p>
                 <p>O ponto de acesso Wi-Fi também se conecta à rede, permitindo que dispositivos móveis acessem os mesmos serviços sem um cabo de rede.</p>
@@ -98,8 +98,8 @@
         </section>
 
         <section class="nota">
-            <h2>Como planejar uma rede corporativa?</h2>
-            <p>Faça uma lista dos dispositivos e serviços necessários. Depois, considere cobertura Wi-Fi, quantidade de portas, velocidade, distância, possibilidade de expansão, custo e segurança. Separe o acesso de visitantes dos equipamentos e serviços internos quando o projeto permitir.</p>
+            <h2>Antes de escolher os equipamentos</h2>
+            <p>Conte quantos dispositivos vão se conectar e onde serão usados. Pense também na cobertura Wi-Fi, nas distâncias dos cabos, nas portas disponíveis e no que pode crescer depois. Se possível, mantenha o acesso de visitantes separado da rede interna.</p>
         </section>
     </main>
 
