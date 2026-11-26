@@ -594,7 +594,6 @@ h2 {
 .nota {
     margin: 0 0 64px;
     padding: 24px;
-    border-left: 4px solid var(--coral);
     background: var(--lime);
 }
 
