@@ -273,7 +273,6 @@ h2 {
 .nota {
     margin: 0 0 64px;
     padding: 18px 22px;
-    border-left: 3px solid var(--blue);
     background: transparent;
 }
 .nota h2 { margin-bottom: 10px; font-size: 24px; }
