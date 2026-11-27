@@ -19,17 +19,10 @@
     </header>
 
     <main class="conteudo">
-        <section class="abertura abertura-inicio">
-            <div class="texto-abertura">
-                <p class="rotulo">Do dia a dia à indústria</p>
-                <h1>Como os dados <strong>viajam pela rede?</strong></h1>
-                <p>Quando você envia uma mensagem ou um sensor mede a temperatura, os dados percorrem uma rede. Vamos entender esse caminho.</p>
-                <a class="botao" href="#assuntos">Ver os assuntos ↓</a>
-            </div>
-            <figure class="foto-abertura">
-                <img src="assets/photos/industrial-panel.jpg" alt="Painel de automação com indicadores de temperatura">
-                <figcaption>Um painel de automação em operação.</figcaption>
-            </figure>
+        <section class="abertura">
+            <p class="rotulo">Do dia a dia à indústria</p>
+            <h1>Como os dados <strong>viajam pela rede?</strong></h1>
+            <p>Quando você envia uma mensagem ou um sensor mede a temperatura, os dados percorrem uma rede. Vamos entender esse caminho.</p>
         </section>
 
         <section class="secao" id="assuntos">
@@ -92,53 +85,41 @@
         </section>
 
         <section class="secao secao-piramide">
-            <p class="rotulo">Redes na automação</p>
-            <h2>A pirâmide da automação</h2>
-            <p class="introducao-piramide">A pirâmide mostra como informações podem sair dos dispositivos no chão de fábrica e chegar aos sistemas que acompanham e planejam a operação. Neste modelo, o nível 4 trata da operação da fábrica e o nível 5 da gestão empresarial. Redes modernas podem integrar vários níveis.</p>
-            <div class="piramide">
-                <article class="nivel-piramide nivel-gestao">
-                    <span class="numero-nivel">05</span>
-                    <div>
-                        <h3>Gestão empresarial</h3>
-                        <p>Planejamento e gestão do negócio com informações consolidadas da empresa.</p>
-                        <span class="exemplos-nivel">ERP · planejamento empresarial</span>
-                    </div>
-                </article>
-                <article class="nivel-piramide nivel-operacao">
-                    <span class="numero-nivel">04</span>
-                    <div>
-                        <h3>Operação da fábrica</h3>
-                        <p>Acompanhamento da produção, qualidade, materiais e desempenho.</p>
-                        <span class="exemplos-nivel">MES · gestão da operação</span>
-                    </div>
-                </article>
-                <article class="nivel-piramide nivel-supervisao">
-                    <span class="numero-nivel">03</span>
-                    <div>
-                        <h3>Supervisão</h3>
-                        <p>Operadores acompanham o processo, os alarmes e as tendências.</p>
-                        <span class="exemplos-nivel">SCADA · IHM · OPC UA</span>
-                    </div>
-                </article>
-                <article class="nivel-piramide nivel-controle">
-                    <span class="numero-nivel">02</span>
-                    <div>
-                        <h3>Controle</h3>
-                        <p>Controladores executam a lógica e coordenam máquinas.</p>
-                        <span class="exemplos-nivel">CLP · PROFINET · EtherNet/IP · EtherCAT</span>
-                    </div>
-                </article>
-                <article class="nivel-piramide nivel-campo">
-                    <span class="numero-nivel">01</span>
-                    <div>
-                        <h3>Campo</h3>
-                        <p>Sensores medem; atuadores executam comandos no processo.</p>
-                        <span class="exemplos-nivel">Sensores · atuadores · IO-Link · HART · AS-i</span>
-                    </div>
-                </article>
+            <p class="rotulo">Redes corporativas e industriais</p>
+            <h2>Da empresa ao chão de fábrica</h2>
+            <p class="introducao-piramide">A pirâmide organiza sistemas e redes usados para levar informações dos sensores até a gestão da empresa. Os exemplos são comuns, mas uma tecnologia pode conectar mais de um nível.</p>
+            <div class="piramide-industrial">
+                <img class="diagrama-piramide" src="assets/photos/piramide-automacao.svg" alt="Pirâmide da automação com cinco níveis, do campo à gestão corporativa">
+                <ol class="niveis-piramide">
+                    <li>
+                        <h3>Nível 5</h3>
+                        <p>Gestão corporativa: ERP, planejamento e integração entre unidades.</p>
+                        <p class="exemplos-nivel">Ethernet · Wi-Fi · fibra óptica · redes WAN</p>
+                    </li>
+                    <li>
+                        <h3>Nível 4</h3>
+                        <p>Gestão da planta: MES/PIMS acompanha produção, qualidade e recursos.</p>
+                        <p class="exemplos-nivel">Ethernet industrial · Foundation Fieldbus HSE · MQTT</p>
+                    </li>
+                    <li>
+                        <h3>Nível 3</h3>
+                        <p>Supervisão: IHM, SCADA, alarmes, históricos e operação.</p>
+                        <p class="exemplos-nivel">OPC UA · Modbus TCP</p>
+                    </li>
+                    <li>
+                        <h3>Nível 2</h3>
+                        <p>Controle: CLPs, CNCs e sistemas digitais de controle distribuído.</p>
+                        <p class="exemplos-nivel">PROFINET · EtherNet/IP · EtherCAT · PROFIBUS DP · DeviceNet · CANopen · CC-Link · Modbus RTU</p>
+                    </li>
+                    <li>
+                        <h3>Nível 1</h3>
+                        <p>Campo: sensores e atuadores medem e atuam diretamente no processo.</p>
+                        <p class="exemplos-nivel">IO-Link · AS-i · HART · WirelessHART · PROFIBUS PA · Foundation Fieldbus H1</p>
+                    </li>
+                </ol>
             </div>
-            <p class="nota-piramide"><strong>Sobre os níveis:</strong> alguns modelos agrupam mais funções. Aqui, MES e ERP aparecem separados para mostrar a diferença entre acompanhar a operação da fábrica e gerir o negócio. Na prática, os sistemas podem trocar dados entre vários níveis.</p>
-            <a class="link-piramide" href="industriais.html">Conheça as redes industriais →</a>
+            <p class="nota-piramide"><strong>Importante:</strong> os níveis são uma referência de organização, não uma regra rígida. Protocolos como OPC UA e Ethernet podem atravessar níveis; os exemplos não substituem a análise técnica de cada rede.</p>
+            <a class="link-piramide" href="industriais.html">Veja os detalhes das redes industriais →</a>
         </section>
 
         <section class="secao exemplo-automacao">

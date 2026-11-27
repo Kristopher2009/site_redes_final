@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="360" viewBox="0 0 500 360">
+  <title>Pirâmide da automação</title>
+  <desc>Cinco níveis conectados, do campo e controle até a gestão corporativa.</desc>
+  <style>
+    .nivel { stroke: #ffffff; stroke-width: 1.5; }
+    .nivel-5 { fill: #d9effa; }
+    .nivel-4 { fill: #b6e1f7; }
+    .nivel-3 { fill: #82c3ef; }
+    .nivel-2 { fill: #398bd0; }
+    .nivel-1 { fill: #1762a9; }
+    .malha { fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: .3; stroke-width: 4; }
+    .separador { fill: none; stroke: #ffffff; stroke-opacity: .85; stroke-width: 2; }
+    .numero { font-family: "Segoe UI", system-ui, sans-serif; font-size: 17px; font-weight: 700; text-anchor: middle; }
+    .numero-escuro { fill: #0d47a1; }
+    .numero-claro { fill: #ffffff; }
+    .conector { fill: none; stroke: #1976d2; stroke-width: 1.5; }
+    .ponto { fill: #1976d2; }
+    @media (max-width: 760px) {
+      .conector, .ponto { display: none; }
+    }
+  </style>
+  <polygon class="nivel nivel-5" points="250,0 292,72 208,72"/>
+  <polygon class="nivel nivel-4" points="208,72 292,72 334,144 166,144"/>
+  <polygon class="nivel nivel-3" points="166,144 334,144 376,216 124,216"/>
+  <polygon class="nivel nivel-2" points="124,216 376,216 418,288 82,288"/>
+  <polygon class="nivel nivel-1" points="82,288 418,288 460,360 40,360"/>
+  <path class="malha" d="M166 144 250 216 334 144 M124 216 250 288 376 216 M166 144 376 216 M334 144 124 216 M250 216 418 288 M250 216 82 288"/>
+  <path class="separador" d="M208 72h84 M166 144h168 M124 216h252 M82 288h336"/>
+  <g class="numero">
+    <text class="numero-escuro" x="243" y="50">5</text>
+    <text class="numero-escuro" x="201" y="122">4</text>
+    <text class="numero-escuro" x="159" y="194">3</text>
+    <text class="numero-claro" x="117" y="266">2</text>
+    <text class="numero-claro" x="75" y="338">1</text>
+  </g>
+  <g class="conector">
+    <path d="M271 36h227 M313 108h185 M355 180h143 M397 252h101 M439 324h59"/>
+  </g>
+  <g class="ponto">
+    <circle cx="498" cy="36" r="3"/>
+    <circle cx="498" cy="108" r="3"/>
+    <circle cx="498" cy="180" r="3"/>
+    <circle cx="498" cy="252" r="3"/>
+    <circle cx="498" cy="324" r="3"/>
+  </g>
+</svg>
